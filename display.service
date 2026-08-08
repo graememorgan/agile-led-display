@@ -1,0 +1,12 @@
+[Unit]
+Description=64x32 LED display
+After=multi-user.target
+
+[Service]
+Type=idle
+WorkingDirectory=/home/myuser/display
+Restart=always
+ExecStart=/home/myuser/display/run.sh
+
+[Install]
+WantedBy=multi-user.target

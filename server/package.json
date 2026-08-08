@@ -1,0 +1,35 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@js-temporal/polyfill": "^0.4.4",
+    "@types/node-fetch": "^2.6.12",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "globby": "^14.0.2",
+    "node-fetch": "^3.3.2",
+    "openapi-fetch": "^0.13.3",
+    "resolve-package-path": "^4.0.3",
+    "rpi-led-matrix": "^1.14.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.3",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
+    "openapi-typescript": "^7.4.4",
+    "prettier": "3.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
